@@ -17,3 +17,9 @@ class User(AbstractUser):
 
     objects = UserManager()
 
+
+class Person(models.Model):
+    name = models.ForeignKey(User, on_delete=models.CASCADE)
+    age = models.PositiveIntegerField()
+    weight = models.FloatField()
+    height = models.FloatField()
