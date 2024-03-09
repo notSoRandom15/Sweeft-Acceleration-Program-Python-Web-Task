@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        hello here
+        {% else %}
+        you are not authenticated
+    {% endif %}
+{% endblock content %}
