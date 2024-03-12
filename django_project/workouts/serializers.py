@@ -1,0 +1,13 @@
+from rest_framework import serializers
+from .models import PersonalWorkoutPlan
+from exercises.serializers import ExerciseSerializer
+
+class PersonalWorkoutPlanSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PersonalWorkoutPlan
+        fields = ['id', 'exercise', 'repetition', 'set', 'duration', 'distance']
+        
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['exercise'] = ExerciseSerializer(instance.exercise.all(), many=True).data
+        return data

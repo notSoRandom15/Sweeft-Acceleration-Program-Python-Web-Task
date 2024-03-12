@@ -23,3 +23,7 @@ class Person(models.Model):
     age = models.PositiveIntegerField()
     weight = models.FloatField()
     height = models.FloatField()
+
+    def __str__(self):
+        return str(self.name)
+    
