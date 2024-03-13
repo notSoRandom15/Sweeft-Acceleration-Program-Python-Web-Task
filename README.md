@@ -11,6 +11,6 @@ Finally you can start the project by running the following command: `docker-comp
 Go to following urls to test the api with: "http://localhost:8000/swagger/" or "http://localhost:8000/redoc/"
 
 For authentication JWT Token is implemented.
-There are predefined exercises in the database. User can create their personal workout plan with this exercises.
+There are predefined exercises in the database. User can create their personal workout plan with this exercises. 
 
 
