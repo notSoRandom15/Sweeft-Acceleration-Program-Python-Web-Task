@@ -26,7 +26,8 @@ schema_view = get_schema_view(
       title="Personalized Workout Plan RESTful API",
       default_version='v1',
       description=""" 
-      testing the description of the workout plan
+      Functionalities: User registration, log in and log out.
+      User can create personalized workout plan with the exercises from database
  """,
    ),
    public=True,
