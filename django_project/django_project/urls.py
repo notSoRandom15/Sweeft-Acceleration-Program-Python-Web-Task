@@ -28,6 +28,7 @@ schema_view = get_schema_view(
       description=""" 
       Functionalities: User registration, log in and log out.
       User can create personalized workout plan with the exercises from database
+      User can update and track their weight
  """,
    ),
    public=True,

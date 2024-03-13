@@ -12,5 +12,6 @@ Go to following urls to test the api with: "http://localhost:8000/swagger/" or "
 
 For authentication JWT Token is implemented.
 There are predefined exercises in the database. User can create their personal workout plan with this exercises. 
+user can update and track their weight
 
 
